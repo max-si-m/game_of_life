@@ -10,4 +10,8 @@ class World
   def add(cell)
     cells << cell
   end
+
+  def cell_at(x, y)
+    cells.find { |c| c.x == x && c.y == y }
+  end
 end
