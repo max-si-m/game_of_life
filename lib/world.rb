@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'cell'
+require_relative 'cell'
 
 class World
   attr_accessor :cells
@@ -15,5 +15,9 @@ class World
 
   def cell_at(x, y)
     cells.find { |c| c.x == x && c.y == y }
+  end
+
+  def next_generation
+    cells.map(&:toggle)
   end
 end

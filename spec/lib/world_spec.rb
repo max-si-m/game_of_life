@@ -12,7 +12,7 @@ describe World do
   end
 
   describe 'cell searching' do
-    let(:cell) { Cell.new(1, 1) }
+    let(:cell) { Cell.new(world, 1, 1) }
 
     before { world.add(cell) }
 
