@@ -7,7 +7,7 @@ describe Cell do
 
   it { expect(cell.x).to eq 1 }
   it { expect(cell.y).to eq 1 }
-  it { expect(cell.live).to eq false }
+  it { expect(cell.live).to eq true }
 
   context 'neighbours' do
     let(:neighbour)     { described_class.new(1, 0) }

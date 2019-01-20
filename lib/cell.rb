@@ -8,7 +8,7 @@ class Cell
   def initialize(x, y)
     @x = x
     @y = y
-    @live = false
+    @live = true
   end
 
   # FIXME: don't like that have to pass world to cell
