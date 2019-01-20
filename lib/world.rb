@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'cell'
+
 class World
   attr_accessor :cells
 
